@@ -1,4 +1,3 @@
-/* #FF8C00 */
 body {
   font-family:
     system-ui,
@@ -13,7 +12,7 @@ body {
     "Helvetica Neue",
     sans-serif;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -24,19 +23,14 @@ body {
   flex-direction: column;
   background-color: #1f2937;
   gap: 100px;
-  padding: 30px 200px 100px 200px;
+  padding: 30px 200px 0 200px;
+  min-height: 90vh;
 }
 
 .header {
   display: flex;
   align-items: center;
-}
-
-.logo {
-  margin-right: auto;
-  color: #f9faf8;
-  font-size: 24px;
-  text-decoration: none;
+  justify-content: space-between;
 }
 
 .logo img {
@@ -64,6 +58,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex: 1;
 }
 
 .hero-text-container {
@@ -81,9 +76,8 @@ body {
   margin: 0;
 }
 
-span {
+.hero-text-container span {
   font-size: 58px;
-  color: #f9faf8;
   font-weight: 1000;
   color: #ff8c00;
 }
@@ -91,7 +85,6 @@ span {
 .hero-text-container p {
   max-width: 600px;
   margin-top: 0;
-  margin-bottom: 24px;
 }
 
 .hero-text-container button {
@@ -104,8 +97,60 @@ span {
   font-weight: 600;
 }
 
+.hero-image {
+  align-self: flex-end;
+}
+
 .hero-image img {
+  display: block;
   height: auto;
   max-width: 450px;
-  background: transparent;
+}
+
+.people-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 900;
+  padding: 100px;
+  background-color: #e5e7eb;
+}
+.cards-container {
+  display: flex;
+}
+
+.card {
+  flex: 0 0 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 3 /4;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.card .text {
+  color: gray;
+  padding: 24px 8px;
+  text-align: left;
+  max-width: 200px;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.card span {
+  display: block;
 }
