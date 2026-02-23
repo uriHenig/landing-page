@@ -122,6 +122,7 @@ body {
 }
 .cards-container {
   display: flex;
+  /* align-items: stretch; */
 }
 
 .card {
@@ -130,8 +131,9 @@ body {
   flex-direction: column;
   align-items: center;
   border: 1px solid #e5e7eb;
-  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  box-shadow: 2px 4px 16px #0000000f;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .card img {
@@ -140,6 +142,10 @@ body {
   object-fit: cover;
   object-position: center 20%;
   display: block;
+}
+
+.image-two {
+  /* background-color: #7ec50b */
 }
 
 .card .text {
