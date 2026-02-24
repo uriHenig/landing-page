@@ -117,42 +117,48 @@ body {
   font-size: 36px;
   color: #1f2937;
   font-weight: 900;
-  padding: 100px;
-  background-color: #e5e7eb;
+  margin: 100px;
 }
 .cards-container {
   display: flex;
-  /* align-items: stretch; */
+  justify-content: space-evenly;
+  gap: 16px;
 }
 
 .card {
-  flex: 0 0 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid #e5e7eb;
-  box-shadow: 2px 4px 16px #0000000f;
-  border-radius: 4px;
+  box-shadow: 2px 8px 24px #00000073;
+  border-radius: 10px;
   box-sizing: border-box;
+  padding: 18px 10px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .card img {
-  width: 100%;
-  aspect-ratio: 3 /4;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
-  object-position: center 20%;
-  display: block;
+  object-position: center 10%;
+  border-radius: 50%;
+  background-color: #e5e7eb;
 }
 
 .card .text {
   color: gray;
-  padding: 24px 8px;
   text-align: left;
   max-width: 200px;
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
 }
 
-.card span {
-  display: block;
+.name {
+  font-weight: 900;
 }
