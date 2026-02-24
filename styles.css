@@ -18,6 +18,15 @@ body {
   margin: 0;
 }
 
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-size: 18px;
+  color: #f9faf8;
+  font-weight: 600;
+}
+
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -86,15 +95,8 @@ body {
   max-width: 600px;
   margin-top: 0;
 }
-
-.hero-text-container button {
+.primary {
   background-color: #ff8c00;
-  border: none;
-  border-radius: 8px;
-  padding: 16px 24px;
-  font-size: 18px;
-  color: #f9faf8;
-  font-weight: 600;
 }
 
 .hero-image {
@@ -110,6 +112,7 @@ body {
 .people-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 200px;
 }
 
 .title {
@@ -117,12 +120,12 @@ body {
   font-size: 36px;
   color: #1f2937;
   font-weight: 900;
-  margin: 100px;
+  margin: 50px;
 }
 .cards-container {
   display: flex;
-  justify-content: space-evenly;
-  gap: 16px;
+  justify-content: center;
+  gap: 54px;
 }
 
 .card {
@@ -161,4 +164,30 @@ body {
 
 .name {
   font-weight: 900;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  gap: 10px;
+  padding: 0 200px 100px 200px;
+}
+
+.inputs-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  border: none;
+  border-radius: 8px;
+  padding: 16px 36px;
+  font-size: 18px;
+  color: #f9faf8;
+  font-weight: 600;
 }
