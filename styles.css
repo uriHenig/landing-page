@@ -136,7 +136,11 @@ button {
   flex-direction: column;
   align-items: center;
   border: 1px solid #e5e7eb;
-  box-shadow: 2px 8px 24px #00000073;
+
+  box-shadow:
+  /* Right shadow */
+    10px 0px 15px -5px #00000025,
+    /* Bottom shadow */ 0px 10px 15px -5px #00000017;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 18px 10px;
@@ -180,11 +184,11 @@ button {
   padding: 0 200px 100px 200px;
 }
 
-.inputs-container {
+.input-container {
   display: flex;
-  justify-content: space-evenly;
   align-content: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 input {
