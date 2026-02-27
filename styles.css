@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family:
     system-ui,
@@ -18,7 +24,7 @@ body {
   margin: 0;
 }
 
-button {
+.btn {
   border: none;
   border-radius: 8px;
   padding: 16px 24px;
@@ -31,7 +37,7 @@ button {
   display: flex;
   flex-direction: column;
   background-color: #1f2937;
-  gap: 100px;
+  /* gap: 100px; */
   padding: 0px 200px 0 200px;
   min-height: 90vh;
 }
@@ -66,10 +72,10 @@ a.logo img {
 }
 
 .hero-content {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex: 1;
 }
 
 .hero-text-container {
@@ -98,7 +104,7 @@ a.logo img {
   max-width: 600px;
   margin-top: 0;
 }
-.primary {
+.btn-primary {
   background-color: #ff8c00;
 }
 
@@ -195,7 +201,8 @@ input {
   border-radius: 8px;
   padding: 16px 36px;
   font-size: 18px;
-  color: #f9faf8;
+  color: #1f2937;
+  background-color: white;
   font-weight: 600;
 }
 
@@ -226,7 +233,7 @@ input:focus {
 }
 
 .call-to-action-text-container h1,
-p {
+.call-to-action-text-container p {
   margin: 0;
 }
 
@@ -234,7 +241,7 @@ p {
   padding: 0;
 }
 
-.secondary {
+.btn-secondary {
   border: 2px solid #f9faf8;
   background-color: transparent;
 }
