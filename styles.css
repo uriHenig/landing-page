@@ -32,7 +32,7 @@ button {
   flex-direction: column;
   background-color: #1f2937;
   gap: 100px;
-  padding: 30px 200px 0 200px;
+  padding: 0px 200px 0 200px;
   min-height: 90vh;
 }
 
@@ -40,12 +40,14 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0;
 }
 
-.logo img {
+a.logo img {
   flex-shrink: 0;
-  height: auto;
-  width: 200px;
+  height: 200px;
+  width: auto;
+  padding: 0;
 }
 
 .header ul {
@@ -98,9 +100,6 @@ button {
 }
 .primary {
   background-color: #ff8c00;
-}
-
-.hero-image {
 }
 
 .hero-image img {
@@ -214,7 +213,7 @@ input:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 64px 32px 64px;
+  padding: 32px 64px 48px 64px;
   border-radius: 8px;
   background-color: #3882f6;
   color: #f9faf8;
