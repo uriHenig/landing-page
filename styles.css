@@ -101,11 +101,11 @@ button {
 }
 
 .hero-image {
-  align-self: flex-end;
 }
 
 .hero-image img {
   display: block;
+  align-self: flex-end;
   height: auto;
   max-width: 450px;
 }
